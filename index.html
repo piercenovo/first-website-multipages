@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--    Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width user-scalable=no">
+    <!--    Title & Others-->
+    <title>Agencia de Marketing Kolibrí Consulting</title>
+    <link rel="icon" type="image/x-icon" href="img/github.png">
+
+    <!--    Bootstrap CSS-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed:wght@300;400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!--    Scripts Tools-->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Kolibrí Consulting</a>
+        <button class="navbar-toggler bg-gold" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon class="bg-gold" id="logo-menu" name="menu-sharp"></ion-icon>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="#slider">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#proyects">Proyectos</a>
+                </li>
+                <li class="nav-item px-3 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Nosotros
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="aboutus.html">¿Quiénes somos?</a>
+                        <a class="dropdown-item" href="whatdowedo.html">¿Qué hacemos?</a>
+                        <a class="dropdown-item" href="ourteam.html">Nuestro Equipo</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="questions.html">Preguntas y Respuestas</a>
+                    </div>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#price" tabindex="-1" aria-disabled="true">Precios</a>
+                </li>
+                <li class="nav-item  text-gold">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--<div id="home"></div>-->
+
+<section id="slider">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slider-011.jpg" alt="First slide">
+                <div class="carousel-caption">
+                    <h3 class="d-block">#SoloSonrie</h3>
+                    <p class="lead d-none d-sm-block">Nuestro primer proyectos desde 2015</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-022.jpg" alt="Second slide">
+                <div class="carousel-caption">
+                    <h3 class="d-block">#SoloSonrie</h3>
+                    <p class="lead d-none d-sm-block">Nuestro primer proyectos desde 2015</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-033.jpg" alt="Third slide">
+                <div class="carousel-caption">
+                    <h3 class="d-block">#SoloSonrie</h3>
+                    <p class="lead d-none d-sm-block">Nuestro primer proyectos desde 2015</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<section id="proyects">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-light">Nuestros Proyectos</h2>
+                <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium
+                    asperiores cumque delectus ea
+                    eius eligendi facere, harum ipsa iusto molestias nostrum odio, optio quae quo sed tenetur veniam
+                    voluptates?</p>
+                <div class="mt-6">
+                    <a href="#">
+                        <img src="img/maps.jpg" class="img-fluid" alt="img1">
+                        <div class="bg-light p-4">
+                            <h4 class="text-dark">#SoloSonrie</h4>
+                            <p class="text-muted mb-0">Es nuestro primer proyecto, juntos desde 2012 [Ver más..]</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mt-6">
+                    <a href="#">
+                        <img src="img/games.jpg" class="img-fluid" alt="img2">
+                        <div class="bg-light p-4">
+                            <h4 class="text-dark">#DejaTuAbrazo</h4>
+                            <p class="text-muted mb-0">Es nuestro segundo proyecto, juntos desde 2014 [Ver más..]</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mt-6">
+                    <a href="#">
+                        <img src="img/portfol.jpg" class="img-fluid" alt="img3">
+                        <div class="bg-light p-4">
+                            <h4 class="text-dark">#ComparteTodo</h4>
+                            <p class="text-muted mb-0">Es nuestro tercer proyecto, juntos desde 2017 [Ver más..]</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="mt-6">
+                    <a href="#">
+                        <img src="img/socialnetwork.jpg" class="img-fluid" alt="img4">
+                        <div class="bg-light p-4">
+                            <h4 class="text-dark">#TeLoAgradece</h4>
+                            <p class="text-muted mb-0">Es nuestro cuarto proyecto, juntos desde 2019 [Ver más..]</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-6">
+            <p class="text-gold mb-0 p-size">Apuesta por tus soluciones digitales</p>
+            <p class="text-light p-size mt-1 mb-0">HAZLO AHORA</p>
+
+        </div>
+    </div>
+</section>
+
+<section id="price" class="bg-light-grey">
+    <div class="container">
+        <h2>Precios dedicados a sus necesidades</h2>
+        <p class="lead text-muted">Escoge cual te convenga, tú decides.</p>
+
+        <div class="row mt-6">
+            <div class="col-md-6">
+                <div class="card border-0 mb-4">
+                    <div class="card-body p-5">
+                        <h3><span class="badge badge-secondary bg-dark text-light mb-2">Básico</span></h3>
+                        <p class="lead mb-4">Este es un paquete básico de entrada.</p>
+                        <h2 class="mb-0">S/.69/semanales</h2>
+                        <p class="lead text-muted mb-4"><b>Adquisición: </b>Cualquier persona</p>
+                        <p class="lead font-weight-bold">Incluye</p>
+                        <ul class="list-unstyled mb-5">
+                            <li class="mb-2 text-muted">
+                                <ion-icon class="lead text-dark mr-2" name="checkmark-circle"></ion-icon>
+                                Logo de la Empresa
+                            </li>
+                            <li class="mb-2 text-muted">
+                                <ion-icon class="lead text-dark mr-2" name="checkmark-circle"></ion-icon>
+                                Branding
+                            </li>
+                            <li class="mb-2 text-muted">
+                                <ion-icon class="lead text-dark mr-2" name="checkmark-circle"></ion-icon>
+                                Publicidad superficial
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary">Comienza Ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-dark border-0 mb-4">
+                    <div class="card-body p-5">
+                        <h3><span class="badge badge-secondary bg-gold text-dark mb-2">Premium</span></h3>
+                        <p class="lead mb-4 text-light">Este es un paquete premium exclusivo.</p>
+                        <h2 class="mb-0 text-light">S/.129/semanales</h2>
+                        <p class="lead text-muted mb-4"><b>Adquisición: </b>Solo clientes</p>
+                        <p class="lead font-weight-bold text-light">Incluye</p>
+                        <ul class="list-unstyled mb-5">
+                            <li class="mb-2 text-muted">
+                                <ion-icon class="lead text-gold mr-2" name="checkmark-circle"></ion-icon>
+                                Marca personal
+                            </li>
+                            <li class="mb-2 text-muted">
+                                <ion-icon class="lead text-gold mr-2" name="checkmark-circle"></ion-icon>
+                                Página Web
+                            </li>
+                            <li class="mb-2 text-muted">
+                                <ion-icon class="lead text-gold mr-2" name="checkmark-circle"></ion-icon>
+                                Publicidad en redes sociales
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-gold">Comienza Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-6 bg-dark p-4 border-0">
+            <div class="row d-flex">
+                <div class="col-md-8">
+                    <h3 class="text-light mb-0 d-inline-block">Checa, ¡Así es como trabajamos!</h3>
+                    <p class="text-muted mb-0">Programé una demostración con mi equipo de expertos para que aprendas
+                        acerca de nuestro producto.</p>
+                </div>
+                <div class="col-md-4 align-self-center text-lg-right text-sm-left">
+                    <a href="#" class="btn btn-primary ml-auto d-inline-block my-2">Presiona Aquí</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="bg-dark">
+    <div class="container">
+        <div class="heading-tittle">
+            <h2 class="text-light">Algunas palabras de nuestros clientes..</h2>
+            <p class="lead mt-3 text-light">Amamos lo que hacemos.. por eso ponemos toda la creatividad, y ellos lo saben:</p>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card m-3 p-4">
+                        <ul class="list-inline li-style">
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                        </ul>
+                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem itaque perspiciatis rerum
+                            tenetur voluptatum. Asperiores debitis ducimus laborum maiores molestiae nemo numquam, optio
+                            placeat. </p>
+                        <div class="d-flex mt-3">
+                            <div class="user mr-3">
+                                <img src="img/person-01.jpg" class="img-fluid profile-img">
+                            </div>
+                            <div class="user-info">
+                                <h6 class="mb-0">Patrick Novoa</h6>
+                                <small>CEO, Partner Gotica</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card m-3 p-4">
+                        <ul class="list-inline li-style">
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                        </ul>
+                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem itaque perspiciatis rerum
+                            tenetur voluptatum. Asperiores debitis ducimus laborum maiores molestiae nemo numquam, optio
+                            placeat. </p>
+                        <div class="d-flex mt-3">
+                            <div class="user mr-3">
+                                <img src="img/person-02.jpg" class="img-fluid profile-img">
+                            </div>
+                            <div class="user-info">
+                                <h6 class="mb-0">Andrea Urteaga</h6>
+                                <small>Marketing, Dateno User</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card m-3 p-4">
+                        <ul class="list-inline li-style">
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                            <li class="list-inline-item">
+                                <ion-icon name="star"></ion-icon>
+                            </li>
+                        </ul>
+                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem itaque perspiciatis rerum
+                            tenetur voluptatum. Asperiores debitis ducimus laborum maiores molestiae nemo numquam, optio
+                            placeat. </p>
+                        <div class="d-flex mt-3">
+                            <div class="user mr-3">
+                                <img src="img/person-03.jpg" class="img-fluid profile-img">
+                            </div>
+                            <div class="user-info">
+                                <h6 class="mb-0">Alejandro Guzmán</h6>
+                                <small>CEO, Crash Holg</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="bg-light-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="blog-item position-relative rounded mb-5 mt-3">
+                    <a href="#">
+                        <div class="blog-info position-absolute">
+                            <p class="text-gold mb-3"><span class="font-weight-bold">Fotografía</span> - Gabriel Montejo
+                            </p>
+                            <h5>Una fotografía tomada desde un sentido superficial</h5>
+                        </div>
+                        <img src="img/photo.jpg" class="img-fluid rounded" alt="">
+                    </a>
+
+                </div>
+
+                <h6 class="mt-5">Kolibrí Consulting</h6>
+                <p>Contacto: <b>gab_monte@gmail.com</b></p>
+            </div>
+
+            <div class="col-md-7 offset-md-1">
+                <h2>Escríbenos para agendar una cita</h2>
+                <p class="lead text-muted">Trabajamos con marcas existentes para crear productos asombrosos. Listo para
+                    acelerar tu proyecto?. <b>Háganoslo saber.</b></p>
+
+                <form action="email.php" method="post" class="needs-validation mt-4" novalidate>
+                    <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Nombre o Empresa" required>
+                            <!--                        <div class="valid-feedback">-->
+                            <!--                            Es un nombre agradable.-->
+                            <!--                        </div>-->
+                            <div class="invalid-feedback">
+                                Escriba su nombre o empresa!
+                            </div>
+                    </div>
+                    <div class="form-group mt-1">
+                        <input type="email" class="form-control" name="email" placeholder="Correo" required>
+                        <div class="invalid-feedback">
+                            Escriba un correo válido!
+                        </div>
+                    </div>
+<!--                    <div class="form-group">-->
+<!--                        <input type="text" class="form-control" name="phone" placeholder="Celular" required>-->
+<!--                        <div class="invalid-feedback">-->
+<!--                            Escriba su número telefónico!-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <div class="form-group">
+                        <textarea type="textarea" class="form-control"  name="message" placeholder="¿Cómo puedo ayudarte?"
+                                  rows="2" required></textarea>
+                        <div class="invalid-feedback">
+                            Te faltó lo más importante. :)
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <ul class="list-inline">
+                    <a href="#slider">
+                        <li class="lead mx-2 mb-2">Inicio</li>
+                    </a>
+                    <a href="#proyects">
+                        <li class=" lead mx-2 mb-2 ">Proyectos</li>
+                    </a>
+                    <li class=" lead mx-2 mb-2">Nosotros</li>
+                    <a href="#price">
+                        <li class="lead mx-2 mb-2">Precios</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="lead mx-2 mb-2">Contacto</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-md-4 mt-5">
+                <ul class="list-inline list-ul">
+                    <li class=" lead mx-2"><b>Encuéntranos en</b></li>
+                    <li class="  mx-2 ">--------------------------------------</li>
+                    <li class=" mt-3 mx-2">Jr. Bolivar 768</li>
+                    <li class=" mt-1 mx-2">Int. 301 Edificio Garmet - Trujillo</li>
+                </ul>
+
+            </div>
+            <div class="col-md-4 mt-5">
+                <ul class="list-inline li-size">
+                    <li class=" lead mx-2"><b>Síguenos en</b></li>
+
+                    <li class="list-inline-item mt-3 ml-2"><a href="https://twitter.com/piercenovoa?s=08"
+                                                              target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+
+                    <li class="list-inline-item"><a href="https://www.instagram.com/piercenh/" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/pierce-novoa/" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                </ul>
+
+                <small>&copy 2020 Kolibrí Consulting. Todos los derechos reservados.</small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+
+<!--    JQuery first, then Popper.js, then Bootstrap JS -->
+<script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="jquery/popper.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

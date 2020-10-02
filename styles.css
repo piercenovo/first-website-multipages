@@ -1,0 +1,451 @@
+:root{
+    --dark: #1a1a1a;
+    --white: #ffffff;
+    --light-grey: #efefef;
+    --grey: #979797;
+    /*--gold: #AB1C22;*/
+    --gold: #ecd5a7;
+    --start: #f7c92f;
+    --gray: #cccccc;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem ;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    /*background-color: var(--white);*/
+    background-color: var(--dark);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+    color: var(--gold);
+}
+
+a {
+    color: var(--light);
+}
+
+a:hover {
+    color: var(--light);
+    text-decoration: none;
+}
+
+.p-size{
+    font-size: 20px;
+}
+
+.bg-dark{
+    background-color: var(--dark) !important;
+}
+
+.bg-light{
+    background-color: var(--white) !important;
+}
+
+.bg-light-grey{
+    background-color: var(--light-grey) !important;
+}
+
+.bg-gold{
+    background-color: var(--gold) !important;
+}
+
+.bg-grey{
+    background-color: var(--grey) !important;
+}
+
+.bg-gray{
+    background-color: var(--gray);
+}
+
+.text-gold{
+    color: var(--gold);
+}
+
+.text-light{
+    color: var(--white) !important;
+}
+
+.text-dark{
+    color: var(--dark) !important;
+}
+.nav-link{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    color: var(--white);
+}
+
+.navbar{
+    background-color: var(--dark);
+    min-height: 80px;
+}
+
+/*.navbar-brand ion-icon{*/
+/*    color: var(--gold);*/
+/*    font-size: 100px;*/
+/*}*/
+
+.navbar-toggler{
+    font-size: 25px;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+#slider{
+    padding: 0;
+}
+
+.mt-6{
+    margin-top: 4rem;
+}
+
+.badge{
+    font-weight: 500;
+    padding: .5rem 1.5rem;
+    line-height: 1.5rem;
+}
+
+.btn{
+    padding: .5rem 1.8rem;
+    border-radius: .2rem;
+}
+
+.btn-secondary{
+    background-color: var(--dark);
+}
+
+.btn-secondary:hover{
+    background-color: var(--dark);
+}
+
+.btn-secondary:focus{
+    background: black;
+    box-shadow: none;
+}
+
+.btn-gold{
+    background-color: var(--gold);
+    color: var(--dark);
+}
+
+.btn-primary{
+    background-color: var(--white);
+    color: var(--dark);
+    border-color: var(--dark);
+}
+
+.btn-primary:hover{
+    background-color: var(--white);
+    color: var(--dark);
+    border-color: var(--dark);
+}
+
+
+.blog-info {
+    color: var(--white);
+    bottom: 1rem;
+    left: 1.5rem;
+}
+
+.form-control{
+    padding: 1.6rem 1rem;
+    font-weight: 300;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--dark);
+}
+
+.ifram{
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+
+
+.li-size{
+    /*margin-top: 15px;*/
+    /*margin-right: 10px;*/
+    font-size: 30px
+}
+
+text-footer{
+    font-size: 20px;
+}
+
+.profile-img {
+    border-radius: 50px;
+    max-width: 40px;
+}
+
+.bord{
+    border: 1px solid #ffffff;
+    width: 1px;
+    height: 20px;
+}
+
+.card > ul > li> ion-icon{
+    width: 28px;
+    height: 28px;
+
+    color: var(--start);
+}
+
+.li-style{
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.card-header h2 > button{
+    color: var(--white);
+    font-size: 22px;
+    outline: none;
+}
+
+.card-header h2:hover > button{
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.card-header h2 > button:focus{
+    text-decoration: none;
+    box-shadow: none !important;
+}
+
+#question{
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+    ), url("img/img-lg3.jpg");
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 700px;
+    color: white;
+}
+
+.card-quest{
+    color: var(--dark);
+    padding: 25px;
+}
+
+.center{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.card-our{
+    width: 270px;
+    height: 400px;
+    border-radius: .25rem;
+    border: none;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--gray) !important;
+    /*transform-style: preserve-3d;*/
+}
+
+.card-our .card-body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease-in-out;
+    backface-visibility: hidden;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card-our .card-body.front{
+    background-image: url("img/person4-card.jpg");
+    background-size: 100%;
+}
+
+.card-our .card-body.front .title{
+    position: absolute;
+    top: 78%;
+    max-width: 220px;
+    color: var(--white);
+    text-align: center;
+
+}
+
+.card-our .card-body.back{
+    background-color: var(--dark);
+    color: var(--white);
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.card-our:hover .card-body.front{
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.card-our:hover .card-body.back{
+    transform: perspective(500px) rotateY(360deg);
+}
+.card-our .card-body.back .content{
+    max-width: 300px;
+    text-align: center;
+}
+
+.ml-8{
+    margin-left: 5rem;
+}
+
+.ml-7{
+    margin-left: 4.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575.98px) {
+
+    h1{ font-size: 50px; line-height: normal}
+    p{ font-size: 20px;}
+
+    h1{
+        margin-top: 175px;
+    }
+
+    .btn-first{
+        background: transparent;
+        border: none !important;
+        font-size:0;
+    }
+
+    .portfolio-toto{
+        min-width: unset;
+        margin: 0 auto !important;
+    }
+
+    .portfolio-details h2{
+        font-size: 32px;
+    }
+
+    .skills-unset{
+        min-width: unset;
+        margin: 20px;
+        height: auto;
+    }
+    .skills svg{
+        margin-top: 0px !important;
+    }
+
+    .skills > h3{
+        text-align: center;
+    }
+
+    .row-card{
+        min-width: unset !important;
+        padding: 40px;
+        /*width: 100px;*/
+        /*padding: 40px;*/
+    }
+}
+
+
+@media (max-width: 769.98px) {
+
+    /*.portfolio-details h2{*/
+    /*    font-size: 32px !important;*/
+    /*}*/
+
+    .content-first{
+        padding-top: 55px;
+    }
+
+    .row-port{
+        justify-content: center !important;
+        margin: auto !important;
+    }
+    .row-bott{
+        margin-top: 20px !important;
+    }
+
+    .portfolio-details a h2{
+        font-size: 28px;
+    }
+
+    .portfolio-details a p{
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .row-about{
+        justify-content: center !important;
+        margin: auto !important;
+    }
+
+    .row-abo{
+        top: 50px;
+    }
+
+    .skills{
+        min-width: unset;
+        height: auto;
+    }
+}
+
+/*@media (max-width: 991.98px) {*/
+
+/*}*/
+
+
+@media (max-width: 1199.98px) {
+
+    .row-about{
+        justify-content: center !important;
+        margin: auto !important;
+    }
+    .row-abo{
+        top: 50px;
+    }
+
+}
